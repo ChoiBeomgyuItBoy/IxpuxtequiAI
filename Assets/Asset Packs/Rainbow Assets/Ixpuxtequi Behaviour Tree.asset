@@ -1,0 +1,112 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-3065396231456358270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6b80b585178d2045b1b5f40e1fad244, type: 3}
+  m_Name: Sequence
+  m_EditorClassIdentifier: 
+  uniqueID: cbbebd0e-71b3-4e53-9ab4-e1cec9876e2e
+  description: "Secuencia de teletransportaci\xF3n"
+  position: {x: 353.00006, y: -47.449993}
+  priority: 0
+  children:
+  - {fileID: -2661669869532139273}
+  - {fileID: 6433275270367987943}
+  - {fileID: 6810063668469657346}
+  abortTree: {fileID: 0}
+--- !u!114 &-2661669869532139273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 537cd96f950deb04ab174d368422b615, type: 3}
+  m_Name: CanPlayerSeeMe
+  m_EditorClassIdentifier: 
+  uniqueID: 8edd6a9c-0dda-477f-b599-9890138df3f7
+  description: "\xBFIxpuxtequi puede ver al jugador?"
+  position: {x: 163.05, y: 117}
+  priority: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c77c0598f94b3f4f91cca746a7f996e, type: 3}
+  m_Name: Ixpuxtequi Behaviour Tree
+  m_EditorClassIdentifier: 
+  rootNode: {fileID: 8052708521874406186}
+  nodes:
+  - {fileID: 8052708521874406186}
+  - {fileID: -3065396231456358270}
+  - {fileID: 6810063668469657346}
+  - {fileID: 6433275270367987943}
+  - {fileID: -2661669869532139273}
+  rootNodeOffset: {x: 250, y: 0}
+--- !u!114 &6433275270367987943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b41b3b053273db94aa968f5ce7cffdf3, type: 3}
+  m_Name: Wait
+  m_EditorClassIdentifier: 
+  uniqueID: 3d4bdfdc-18c7-476c-9d30-93f71c58fead
+  description: Espera por 1 segundo
+  position: {x: 343.45, y: 125}
+  priority: 0
+  secondsToWait: 0.5
+--- !u!114 &6810063668469657346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17d8f6f60a5c5984e812f368b961b4fa, type: 3}
+  m_Name: Teleport
+  m_EditorClassIdentifier: 
+  uniqueID: 2120d19c-4f96-4e57-98f8-a0f8b4679c5c
+  description: Teletransportarse cerca del jugador
+  position: {x: 521, y: 117}
+  priority: 0
+  teleportRadius: 40
+  teleportEffect: {fileID: 7868291707053621785, guid: abf1b8773b1d82b4a8388324c76a82cc, type: 3}
+--- !u!114 &8052708521874406186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3d85566c974f07459aee2e34c869a17, type: 3}
+  m_Name: RootNode
+  m_EditorClassIdentifier: 
+  uniqueID: 75950c97-b7bc-4868-a6d3-59999527597e
+  description: 
+  position: {x: 351, y: -165.31601}
+  priority: 0
+  child: {fileID: -3065396231456358270}
+  abortTree: {fileID: 0}
