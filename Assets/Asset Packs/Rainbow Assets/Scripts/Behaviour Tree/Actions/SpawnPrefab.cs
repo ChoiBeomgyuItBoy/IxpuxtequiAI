@@ -2,13 +2,13 @@ using UnityEngine;
 
 namespace RainbowAssets.BehaviourTree.Actions
 {
-    public class PrintMessage : ActionNode
+    public class SpawnPrefab : ActionNode
     {
-        [SerializeField] string message;
+        [SerializeField] GameObject prefab;
 
         protected override void OnEnter()
         {
-            Debug.Log(message);
+            Instantiate(prefab, controller.transform.position, Quaternion.identity);
         }
 
         protected override Status OnTick()

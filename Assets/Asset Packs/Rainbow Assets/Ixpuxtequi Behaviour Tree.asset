@@ -1,5 +1,23 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-3682168152956075508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b41b3b053273db94aa968f5ce7cffdf3, type: 3}
+  m_Name: Wait
+  m_EditorClassIdentifier: 
+  uniqueID: fc797cc2-4c08-4ca0-becb-cad7f9da13ad
+  description: "Ventana de observaci\xF3n para el jugador"
+  position: {x: 257, y: 83.00001}
+  priority: 0
+  secondsToWait: 0.1
+  printElapsedTime: 0
 --- !u!114 &-3065396231456358270
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14,12 +32,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   uniqueID: cbbebd0e-71b3-4e53-9ab4-e1cec9876e2e
   description: "Secuencia de teletransportaci\xF3n"
-  position: {x: 353.00006, y: -47.449993}
+  position: {x: 445.5075, y: -115.38502}
   priority: 0
   children:
   - {fileID: -2661669869532139273}
-  - {fileID: 6433275270367987943}
+  - {fileID: -782790005038837345}
+  - {fileID: -3682168152956075508}
+  - {fileID: -1143179942368562526}
+  - {fileID: 3713205778393469554}
   - {fileID: 6810063668469657346}
+  - {fileID: -2420961355628543635}
   abortTree: {fileID: 0}
 --- !u!114 &-2661669869532139273
 MonoBehaviour:
@@ -35,8 +57,59 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   uniqueID: 8edd6a9c-0dda-477f-b599-9890138df3f7
   description: "\xBFIxpuxtequi puede ver al jugador?"
-  position: {x: 163.05, y: 117}
+  position: {x: -74.29, y: 82.99999}
   priority: 0
+--- !u!114 &-2420961355628543635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8347cc9c1d8d0884992237a90cfe1699, type: 3}
+  m_Name: SetVisibility
+  m_EditorClassIdentifier: 
+  uniqueID: 50af7adf-e66e-4b25-968b-e7ec9d6c55f2
+  description: Aparece
+  position: {x: 925.0001, y: 90.99997}
+  priority: 0
+  visible: 1
+--- !u!114 &-1143179942368562526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8347cc9c1d8d0884992237a90cfe1699, type: 3}
+  m_Name: SetVisibility
+  m_EditorClassIdentifier: 
+  uniqueID: e271fefa-d81a-4621-81e3-68ff42ef6869
+  description: Desaparece
+  position: {x: 425, y: 83.00001}
+  priority: 0
+  visible: 0
+--- !u!114 &-782790005038837345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec19771c031b392429649a45ab25053f, type: 3}
+  m_Name: SpawnPrefab
+  m_EditorClassIdentifier: 
+  uniqueID: b996c246-2be8-4693-981c-eaf0a6dace59
+  description: "Spawnea efecto de teletransportaci\xF3n"
+  position: {x: 91.000015, y: 82.99999}
+  priority: 0
+  prefab: {fileID: 7868291707053621785, guid: abf1b8773b1d82b4a8388324c76a82cc, type: 3}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54,10 +127,14 @@ MonoBehaviour:
   - {fileID: 8052708521874406186}
   - {fileID: -3065396231456358270}
   - {fileID: 6810063668469657346}
-  - {fileID: 6433275270367987943}
   - {fileID: -2661669869532139273}
+  - {fileID: -782790005038837345}
+  - {fileID: -3682168152956075508}
+  - {fileID: 3713205778393469554}
+  - {fileID: -1143179942368562526}
+  - {fileID: -2420961355628543635}
   rootNodeOffset: {x: 250, y: 0}
---- !u!114 &6433275270367987943
+--- !u!114 &3713205778393469554
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -69,11 +146,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b41b3b053273db94aa968f5ce7cffdf3, type: 3}
   m_Name: Wait
   m_EditorClassIdentifier: 
-  uniqueID: 3d4bdfdc-18c7-476c-9d30-93f71c58fead
-  description: Espera por 1 segundo
-  position: {x: 343.45, y: 125}
+  uniqueID: 94929fb9-75c5-47f7-9c38-6e42f420c23e
+  description: Espera antes de teletransportarte
+  position: {x: 589.00006, y: 88.99999}
   priority: 0
-  secondsToWait: 0.5
+  secondsToWait: 10
+  printElapsedTime: 0
+--- !u!114 &6208541913551359371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71cdfcfb010bf6d459619b7d02b94031, type: 3}
+  m_Name: SetRendererActive
+  m_EditorClassIdentifier: 
+  uniqueID: 75500962-16bb-49db-b732-ff2d53a4af65
+  description: 
+  position: {x: 554, y: 149}
+  priority: 0
+  status: 0
+  started: 0
+  controller: {fileID: 0}
+  enabled: 1
 --- !u!114 &6810063668469657346
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -87,11 +185,30 @@ MonoBehaviour:
   m_Name: Teleport
   m_EditorClassIdentifier: 
   uniqueID: 2120d19c-4f96-4e57-98f8-a0f8b4679c5c
-  description: Teletransportarse cerca del jugador
-  position: {x: 521, y: 117}
+  description: Teletransportate cerca del jugador
+  position: {x: 757, y: 88.00001}
   priority: 0
   teleportRadius: 40
-  teleportEffect: {fileID: 7868291707053621785, guid: abf1b8773b1d82b4a8388324c76a82cc, type: 3}
+--- !u!114 &7106777263469342596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71cdfcfb010bf6d459619b7d02b94031, type: 3}
+  m_Name: SetRendererActive
+  m_EditorClassIdentifier: 
+  uniqueID: a762c169-7c48-4208-b339-5185f05cb1a0
+  description: 
+  position: {x: 209, y: 149}
+  priority: 0
+  status: 0
+  started: 0
+  controller: {fileID: 0}
+  enabled: 0
 --- !u!114 &8052708521874406186
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -106,7 +223,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   uniqueID: 75950c97-b7bc-4868-a6d3-59999527597e
   description: 
-  position: {x: 351, y: -165.31601}
+  position: {x: 454.00003, y: -241.22054}
   priority: 0
   child: {fileID: -3065396231456358270}
   abortTree: {fileID: 0}

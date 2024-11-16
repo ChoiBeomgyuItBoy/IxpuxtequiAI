@@ -6,7 +6,6 @@ namespace RainbowAssets.BehaviourTree.Actions
     public class Teleport : ActionNode
     {
         [SerializeField] float teleportRadius = 20;
-        [SerializeField] GameObject teleportEffect;
         GameObject player;
         NavMeshAgent agent;
         
@@ -27,11 +26,6 @@ namespace RainbowAssets.BehaviourTree.Actions
 
                 if(worldViewPoint.z < 0)
                 {
-                    if(teleportEffect != null)
-                    {
-                        Instantiate(teleportEffect, controller.transform.position, Quaternion.identity);
-                    }
-
                     agent.Warp(hit.position);
                     
                     return Status.Success;

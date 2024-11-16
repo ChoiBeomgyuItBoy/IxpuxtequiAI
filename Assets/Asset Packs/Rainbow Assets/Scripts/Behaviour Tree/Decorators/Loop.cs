@@ -1,4 +1,4 @@
-namespace RainbowAssets.BehaviourTree
+namespace RainbowAssets.BehaviourTree.Decorators
 {
     public class Loop : DecoratorNode
     {
