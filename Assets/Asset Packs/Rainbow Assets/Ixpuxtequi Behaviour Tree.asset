@@ -17,7 +17,6 @@ MonoBehaviour:
   position: {x: 257, y: 83.00001}
   priority: 0
   secondsToWait: 0.1
-  printElapsedTime: 0
 --- !u!114 &-3065396231456358270
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36,6 +35,7 @@ MonoBehaviour:
   priority: 0
   children:
   - {fileID: -2661669869532139273}
+  - {fileID: 1935448876420739297}
   - {fileID: -782790005038837345}
   - {fileID: -3682168152956075508}
   - {fileID: -1143179942368562526}
@@ -57,7 +57,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   uniqueID: 8edd6a9c-0dda-477f-b599-9890138df3f7
   description: "\xBFIxpuxtequi puede ver al jugador?"
-  position: {x: -74.29, y: 82.99999}
+  position: {x: -229, y: 75}
   priority: 0
 --- !u!114 &-2420961355628543635
 MonoBehaviour:
@@ -133,7 +133,26 @@ MonoBehaviour:
   - {fileID: 3713205778393469554}
   - {fileID: -1143179942368562526}
   - {fileID: -2420961355628543635}
+  - {fileID: 1935448876420739297}
   rootNodeOffset: {x: 250, y: 0}
+--- !u!114 &1935448876420739297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6c2e8fae8fefe642a9815e5486b045d, type: 3}
+  m_Name: Flee
+  m_EditorClassIdentifier: 
+  uniqueID: 48ff331d-7b8e-4e02-9139-4a6b18d2dc09
+  description: Escapa del jugador
+  position: {x: -61, y: 91}
+  priority: 0
+  fleeDistance: 10
+  speed: 15
 --- !u!114 &3713205778393469554
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -151,7 +170,6 @@ MonoBehaviour:
   position: {x: 589.00006, y: 88.99999}
   priority: 0
   secondsToWait: 10
-  printElapsedTime: 0
 --- !u!114 &6208541913551359371
 MonoBehaviour:
   m_ObjectHideFlags: 0
