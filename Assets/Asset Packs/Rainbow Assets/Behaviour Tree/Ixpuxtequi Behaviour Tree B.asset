@@ -1,0 +1,359 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-5386678647934075300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af3cace93ee6d8d48830f687f14b01eb, type: 3}
+  m_Name: SelectStatus
+  m_EditorClassIdentifier: 
+  uniqueID: 412c385f-8756-4ce9-b91c-b1ca52ecc1c6
+  description: No hagas nada
+  position: {x: -137, y: 237}
+  priority: 0
+  statusToSelect: 1
+--- !u!114 &-3682168152956075508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b41b3b053273db94aa968f5ce7cffdf3, type: 3}
+  m_Name: Wait
+  m_EditorClassIdentifier: 
+  uniqueID: fc797cc2-4c08-4ca0-becb-cad7f9da13ad
+  description: "Ventana de observaci\xF3n para el jugador"
+  position: {x: 452.06763, y: 85.00004}
+  priority: 0
+  secondsToWait: 0.1
+--- !u!114 &-3065396231456358270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6b80b585178d2045b1b5f40e1fad244, type: 3}
+  m_Name: Sequence
+  m_EditorClassIdentifier: 
+  uniqueID: cbbebd0e-71b3-4e53-9ab4-e1cec9876e2e
+  description: "Secuencia de teletransportaci\xF3n"
+  position: {x: 445.5075, y: -115.38502}
+  priority: 0
+  children:
+  - {fileID: -1584736108687416054}
+  - {fileID: 394579797201877940}
+  - {fileID: -782790005038837345}
+  - {fileID: -3682168152956075508}
+  - {fileID: -1143179942368562526}
+  - {fileID: 3713205778393469554}
+  - {fileID: 6810063668469657346}
+  - {fileID: -2420961355628543635}
+  abortTree: {fileID: 0}
+  abortStatus: 1
+--- !u!114 &-2420961355628543635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8347cc9c1d8d0884992237a90cfe1699, type: 3}
+  m_Name: SetVisibility
+  m_EditorClassIdentifier: 
+  uniqueID: 50af7adf-e66e-4b25-968b-e7ec9d6c55f2
+  description: Aparece
+  position: {x: 1120.0676, y: 93.000015}
+  priority: 0
+  visible: 1
+--- !u!114 &-1584736108687416054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3928e589b6b404ea43e81221128b4c, type: 3}
+  m_Name: Loop
+  m_EditorClassIdentifier: 
+  uniqueID: a9adf7c3-4657-4d0c-b4a8-e219c64d469d
+  description: 
+  position: {x: -285, y: 85}
+  priority: 0
+  child: {fileID: 5407038903727306241}
+  abortTree: {fileID: 11400000, guid: 792311f94d985ae42aede621d8df0099, type: 2}
+  abortStatus: 1
+--- !u!114 &-1143179942368562526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8347cc9c1d8d0884992237a90cfe1699, type: 3}
+  m_Name: SetVisibility
+  m_EditorClassIdentifier: 
+  uniqueID: e271fefa-d81a-4621-81e3-68ff42ef6869
+  description: Desaparece
+  position: {x: 620.0676, y: 85.00004}
+  priority: 0
+  visible: 0
+--- !u!114 &-782790005038837345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec19771c031b392429649a45ab25053f, type: 3}
+  m_Name: SpawnPrefab
+  m_EditorClassIdentifier: 
+  uniqueID: b996c246-2be8-4693-981c-eaf0a6dace59
+  description: "Spawnea efecto de teletransportaci\xF3n"
+  position: {x: 286.06763, y: 85.00004}
+  priority: 0
+  prefab: {fileID: 7868291707053621785, guid: abf1b8773b1d82b4a8388324c76a82cc, type: 3}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c77c0598f94b3f4f91cca746a7f996e, type: 3}
+  m_Name: Ixpuxtequi Behaviour Tree B
+  m_EditorClassIdentifier: 
+  rootNode: {fileID: 8052708521874406186}
+  nodes:
+  - {fileID: 8052708521874406186}
+  - {fileID: -3065396231456358270}
+  - {fileID: 6810063668469657346}
+  - {fileID: -782790005038837345}
+  - {fileID: -3682168152956075508}
+  - {fileID: 3713205778393469554}
+  - {fileID: -1143179942368562526}
+  - {fileID: -2420961355628543635}
+  - {fileID: 1935448876420739297}
+  - {fileID: 394579797201877940}
+  - {fileID: -5386678647934075300}
+  - {fileID: 1825939220241254288}
+  - {fileID: -1584736108687416054}
+  - {fileID: 5407038903727306241}
+  rootNodeOffset: {x: 250, y: 0}
+--- !u!114 &394579797201877940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 943c39989e6f3ed46b7f81cfe26422a5, type: 3}
+  m_Name: Selector
+  m_EditorClassIdentifier: 
+  uniqueID: 8b555c17-4738-4584-93aa-998559684dc8
+  description: Comportamiento aleatorio
+  position: {x: 76, y: 85}
+  priority: 0
+  children:
+  - {fileID: -5386678647934075300}
+  - {fileID: 1935448876420739297}
+  - {fileID: 1825939220241254288}
+  abortTree: {fileID: 0}
+  abortStatus: 1
+  selectionType: 2
+--- !u!114 &1825939220241254288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14642a9be63fccc45ba42283df3afdc8, type: 3}
+  m_Name: ChasePlayer
+  m_EditorClassIdentifier: 
+  uniqueID: 21fff8f9-6ef8-4d00-9399-c00b0fafaccf
+  description: Persigue al jugador
+  position: {x: 207, y: 235}
+  priority: 0
+  chaseSpeed: 15
+  catchDistance: 3
+--- !u!114 &1935448876420739297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6c2e8fae8fefe642a9815e5486b045d, type: 3}
+  m_Name: Flee
+  m_EditorClassIdentifier: 
+  uniqueID: 48ff331d-7b8e-4e02-9139-4a6b18d2dc09
+  description: Escapa del jugador
+  position: {x: 32, y: 238}
+  priority: 0
+  fleeDistance: 10
+  speed: 15
+--- !u!114 &3713205778393469554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b41b3b053273db94aa968f5ce7cffdf3, type: 3}
+  m_Name: Wait
+  m_EditorClassIdentifier: 
+  uniqueID: 94929fb9-75c5-47f7-9c38-6e42f420c23e
+  description: Espera antes de teletransportarte
+  position: {x: 784.06757, y: 91.000015}
+  priority: 0
+  secondsToWait: 10
+--- !u!114 &5407038903727306241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52dce58a29098db4e84cd7d37c9110cf, type: 3}
+  m_Name: PlaySoundEffect
+  m_EditorClassIdentifier: 
+  uniqueID: df67e2c4-c39c-4a3d-8e9f-e52b44341192
+  description: Sonidos de susurros en ciclo
+  position: {x: -343, y: 227}
+  priority: 0
+  clips:
+  - {fileID: 8300000, guid: 4e8c1014b662d1e48aa08dafa53b155f, type: 3}
+  - {fileID: 8300000, guid: 79e2b0fdbf46339498814f38277777dc, type: 3}
+  - {fileID: 8300000, guid: 8e242a89a3dee3b4face9d661afa6fa6, type: 3}
+  - {fileID: 8300000, guid: 290437ae476e5684f9b0ae66bb5a6018, type: 3}
+  - {fileID: 8300000, guid: bc4262e79b8139243b1b50f897d1e7b6, type: 3}
+  delayBetweenClips: 0
+  stopWhenAbort: 0
+--- !u!114 &6208541913551359371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71cdfcfb010bf6d459619b7d02b94031, type: 3}
+  m_Name: SetRendererActive
+  m_EditorClassIdentifier: 
+  uniqueID: 75500962-16bb-49db-b732-ff2d53a4af65
+  description: 
+  position: {x: 554, y: 149}
+  priority: 0
+  status: 0
+  started: 0
+  controller: {fileID: 0}
+  enabled: 1
+--- !u!114 &6810063668469657346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17d8f6f60a5c5984e812f368b961b4fa, type: 3}
+  m_Name: Teleport
+  m_EditorClassIdentifier: 
+  uniqueID: 2120d19c-4f96-4e57-98f8-a0f8b4679c5c
+  description: Teletransportate cerca del jugador
+  position: {x: 952.0676, y: 90.000015}
+  priority: 0
+  teleportRadius: 40
+--- !u!114 &7106777263469342596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71cdfcfb010bf6d459619b7d02b94031, type: 3}
+  m_Name: SetRendererActive
+  m_EditorClassIdentifier: 
+  uniqueID: a762c169-7c48-4208-b339-5185f05cb1a0
+  description: 
+  position: {x: 209, y: 149}
+  priority: 0
+  status: 0
+  started: 0
+  controller: {fileID: 0}
+  enabled: 0
+--- !u!114 &8052708521874406186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3d85566c974f07459aee2e34c869a17, type: 3}
+  m_Name: RootNode
+  m_EditorClassIdentifier: 
+  uniqueID: 75950c97-b7bc-4868-a6d3-59999527597e
+  description: 
+  position: {x: 454.00003, y: -241.22054}
+  priority: 0
+  child: {fileID: -3065396231456358270}
+  abortTree: {fileID: 0}
+  abortStatus: 1
+--- !u!114 &8428185999359808539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 943c39989e6f3ed46b7f81cfe26422a5, type: 3}
+  m_Name: Selector
+  m_EditorClassIdentifier: 
+  uniqueID: 67def0d3-062d-4cca-bccc-7d30c79a6865
+  description: 
+  position: {x: 28.999996, y: 85.000015}
+  priority: 0
+  children:
+  - {fileID: 1935448876420739297}
+  abortTree: {fileID: 0}
+  abortStatus: 1
+  selectionType: 2

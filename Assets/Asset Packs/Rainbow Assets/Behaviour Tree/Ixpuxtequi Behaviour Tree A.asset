@@ -120,7 +120,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5c77c0598f94b3f4f91cca746a7f996e, type: 3}
-  m_Name: Ixpuxtequi Behaviour Tree
+  m_Name: Ixpuxtequi Behaviour Tree A
   m_EditorClassIdentifier: 
   rootNode: {fileID: 8052708521874406186}
   nodes:

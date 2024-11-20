@@ -8,6 +8,7 @@ namespace RainbowAssets.BehaviourTree
     {
         [SerializeField] List<Node> children = new();
         [SerializeField] BehaviourTree abortTree;
+        [SerializeField] Status abortStatus = Status.Success;
 
         public override Node Clone()
         {
@@ -86,10 +87,15 @@ namespace RainbowAssets.BehaviourTree
 
         public override Status Tick()
         {
-            if (abortTree != null && abortTree.Tick() == Status.Failure)
+            if(abortTree != null)
             {
-                Abort();
-                return Status.Failure;
+                Status abortTreeStatus = abortTree.Tick();
+
+                if(abortTreeStatus == Status.Failure || abortTreeStatus == Status.Success)
+                {
+                    Abort();
+                    return abortStatus;
+                }
             }
 
             return base.Tick();
